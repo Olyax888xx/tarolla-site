@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="/css/style_main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@0,8..30,100..900;1,8..30,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="name">
+                <img src="/photos/logo.png" alt="logotip" width="80px">
+                <p>Tarolla</p>
+            </div>
+            <div class="navigaciya">
+                <a href="/index.html" class="link">Главная</a>
+                <a href="/about_me.html" class="link">Обо мне</a>
+                <a href="/services.html" class="link">Услуги</a>
+                <a href="/rewiews.html" class="link">Отзывы</a>
+            </div>
+            <img src="/photos/account.png" alt="account" width="40px" height="40px" class="account">
+        </div>
+    </header>
+    <div class="zapis">
+        <h1>То, что тебе сейчас <br>нужно</h1>
+        <a class="cnopkaa" id="open-session">
+        <div class="cnopka"><p>Записаться на сеанс</p></div>
+        </a>
+    </div>
+    <div class="when">
+        <p>Когда мир вокруг теряет силу, а внутренний компас <br>
+перестаёт указывать путь, <br>
+мы ищем маяк — знак, который вновь <br>
+соединит нас с нашей истинной дорогой. <br>
+Если твой выбор стал тяжёлым, если сердце <br>
+тревожится и требует ответа, <br>
+если хочешь узнать, действительно ли судьба <br>
+уже постучала в твою жизнь —ты пришла туда. <br>
+Я помогу тебе прочесть послания,<br> которые Вселенная
+давно готова открыть.</p>
+        <div class="cards">
+            <div class="slider">
+                <div class="slides" id="slides">
+                    <img src="/photos/cord_1.png" alt="">
+                    <img src="/photos/card_2.png" alt="">
+                    <img src="/photos/card_3.png" alt="">
+                    <img src="/photos/cord_1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="poloska">
+        <img src="/photos/poloska.png" alt="poloska krasivaya" width="100%">
+    </div>
+    <div class="contakt">
+        <div class="cont">
+            <p>Контакты <br><br>
+            Почта: tarolla@yandex.ru <br>
+            ВК: @tarolla <br>
+            ТГ: @tarolla <br>
+            Номер телефона: +7 (999) 666 - 88 - 88</p>
+        </div>
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2438.7405336622123!2d62.183133988716776!3d52.479445939619424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTLCsDI4JzQ3LjEiTiA2MsKwMTEnMDkuOCJF!5e1!3m2!1sru!2sus!4v1764273277025!5m2!1sru!2sus" class="map"></iframe>
+        </div>
+    </div>
+    <footer>
+        <p>2025</p>
+        <p>дизайн: Vorobeva Olga</p>
+    </footer>
+
+    <!-- Модальное окно -->
+    <div id="auth-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <h2>Добро пожаловать</h2>
+            <button class="modal-btn" onclick="location.href='/login.html'">Вход</button>
+            <button class="modal-btn" onclick="location.href='/register.html'">Регистрация</button>
+        </div>
+    </div>
+    
+    <!-- МОДАЛЬНОЕ ОКНО ЗАПИСИ НА СЕАНС -->
+    <div id="session-modal" class="modal">
+        <div class="session-content">
+            <span id="close-session" class="close">&times;</span>
+            <h2>Запись на сеанс</h2>
+
+            <form id="session-form">
+                <div class="input-group" data-label="Имя">
+                    <input type="text" class="pole" placeholder=" " required>
+                    <label></label>
+                </div>
+
+                <div class="input-group" data-label="Номер телефона">
+                    <input type="tel" class="pole" placeholder=" " required>
+                    <label></label>
+                </div>
+
+                <button type="submit" class="modal-btn">Записаться</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="/js/modal.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

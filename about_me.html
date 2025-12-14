@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обо мне</title>
+    <link rel="stylesheet" href="/css/style_about_me.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@0,8..30,100..900;1,8..30,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="name">
+                <img src="/photos/logo.png" alt="logotip" width="80px">
+                <p>Tarolla</p>
+            </div>
+            <div class="navigaciya">
+                <a href="/index.html" class="link">Главная</a>
+                <a href="/about_me.html" class="link">Обо мне</a>
+                <a href="/services.html" class="link">Услуги</a>
+                <a href="/rewiews.html" class="link">Отзывы</a>
+            </div>
+            <img src="/photos/account.png" alt="account" width="40px" height="40px" class="account">
+
+        </div>
+    </header>
+    <div class="yana">
+        <div class="blok">
+            <h1>Меня зовут Яна</h1>
+            <p>Уже много лет я работаю с Таро — это не просто <br>
+                инструмент, а мой способ помогать людям находить <br>
+                ответы, ясность и спокойствие. За это время я <br>
+                поддержала множество людей в самых разных <br>
+                жизненных ситуациях: от сложных решений до вопросов <br>
+                о чувствах, работе и внутреннем состоянии.</p>
+        </div>
+        <img src="/photos/yana.png" alt="devushka_ yana" height="580px" width="480px">
+    </div>
+    <div class="consuit">
+        <img src="/photos/window.png" alt="devushka and okno" height="660px" width="510px" class="phot">
+        <div class="text">
+            <p>Каждая консультация для меня — это личный диалог. <br>
+                Я внимательно слушаю, чувствую и подбираю подход, <br>
+                который подходит именно вам. Никаких шаблонов и общих <br>
+                фраз — только честность, уважение и желание <br>
+                действительно помочь. <br><br>
+                Я верю, что карты Таро открывают путь к пониманию себя <br>
+                и своих возможностей. И если вы чувствуете, что вам нужен <br>
+                ориентир или лёгкое направление — я с радостью буду рядом.</p>
+        </div>
+    </div>
+    <footer>
+        <p>2025</p>
+        <p>дизайн: Vorobeva Olga</p>
+    </footer>
+    
+    <!-- Модальное окно -->
+    <div id="auth-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <h2>Добро пожаловать</h2>
+            <button class="modal-btn" onclick="location.href='/login.html'">Вход</button>
+            <button class="modal-btn" onclick="location.href='/register.html'">Регистрация</button>
+        </div>
+    </div>
+    <script src="/js/modal.js"></script>
+</body>
+</html>
